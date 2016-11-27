@@ -25,6 +25,7 @@ if [ -f "./Dockerfile" ]; then
 
   docker build -t "${IMAGE}:${TAG}" .
   docker push "${IMAGE}:${TAG}"
+  exit $?
 fi
 
 dirs=$(find -L . -type d -depth 1 | grep -v .git)
