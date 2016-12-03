@@ -1,4 +1,5 @@
-FROM alpine:latest
+# FROM alpine:latest
+FROM nginx:1.11.6-alpine
 MAINTAINER John Kamenik
 
 ENV HUGO_VERSION=0.15
