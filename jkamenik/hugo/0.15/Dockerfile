@@ -4,7 +4,7 @@ MAINTAINER John Kamenik
 
 ENV HUGO_VERSION=0.15
 
-EXPOSE 1313
+EXPOSE 80
 
 RUN apk add --update wget ca-certificates && \
   wget https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux_amd64.tar.gz && \
