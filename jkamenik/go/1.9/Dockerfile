@@ -1,6 +1,6 @@
-FROM jkamenik/alpine:3.6
+FROM golang:1.9.0-alpine3.6
 LABEL MAINTAINER "John Kamenik <jkamenik+docker@gmail.com>"
 
-RUN apk add --no-cache bash go
+RUN apk --no-cache add bash
 
 ENTRYPOINT /bin/bash
